@@ -1,0 +1,25 @@
+      <!doctype HTML>
+      <html>
+        <head>
+          <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+          <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"> </script>
+          <title>
+            AR.js for hiro Marker
+          </title>
+        </head>
+        <body style='margin : 0px; overflow: hidden;'>
+          <a-scene>
+              <a-marker id="mymarker" preset="hiro">
+      <!-- Comment for a-cone:  -->
+      <a-cone position="0.00 0.70 0.00" material="color: #0080ff;opacity:0.6" rotation="0 0 1"  radius-bottom="3.00" radius-top="2.00" height="1.80" ></a-cone>
+         <!-- Comment for a-ring:  -->
+      <a-ring position="0.00 0.50 0.00" material="color: #ff0000;opacity:0.5" rotation="0 0 0"  radius-inner="1.50" radius-outer="2.50" ></a-ring>
+         <!-- Comment for a-sphere:  -->
+      <a-sphere position="0.00 0.50 0.00" material="color: #80ff00;opacity:0.5" rotation="0 0 0"  radius="1.50" ></a-sphere>
+   
+              </a-marker>
+              <a-entity camera></a-entity>
+         </a-scene>
+        </body>
+      </html>
+    
